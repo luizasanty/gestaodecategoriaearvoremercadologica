@@ -1,2 +1,2 @@
-# Gestão Categoria e Arvore Mercadologica
+# Gestão de Categorias e Árvore Mercadológica
 trabalho da faculdade
