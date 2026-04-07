@@ -1,0 +1,2 @@
+# gestaodecategoriaearvoremercadologica
+trabalho da faculdade
