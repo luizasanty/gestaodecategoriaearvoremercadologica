@@ -1,9 +1,5 @@
 #  Dicionário de Dados
 
-Este documento descreve a estrutura da tabela `categorias` e seus relacionamentos.
-
----
-
 ## Tabela: `categorias`
 **Descrição:** Armazena as categorias do sistema, permitindo uma estrutura de árvore (categorias e subcategorias).
 
@@ -16,15 +12,4 @@ Este documento descreve a estrutura da tabela `categorias` e seus relacionamento
 
 ---
 
-###  Regras de Negócio e Relacionamentos
-
-1. **Autorrelacionamento (1:N):** - Uma categoria pode ter **várias** subcategorias relacionadas a ela.
-   - Uma subcategoria pertence a **apenas uma** categoria pai.
-   
-2. **Categorias Principais:**
-   - Se o campo `categorias_id_categoria` estiver vazio (`NULL`), significa que ela é uma categoria de primeiro nível (Ex: "Eletrônicos").
-
-3. **Integridade Referencial:**
-   - **ON DELETE SET NULL:** Se uma categoria pai for deletada, suas subcategorias continuam existindo, mas passam a ser categorias principais.
-   - **ON UPDATE CASCADE:** Se o ID de uma categoria mudar, todas as referências nas subcategorias serão atualizadas automaticamente.
 
